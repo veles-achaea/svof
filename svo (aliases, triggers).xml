@@ -16868,9 +16868,9 @@ end</script>
 						</regexCodePropertyList>
 						<Trigger isActive="yes" isFolder="no" isTempTrigger="no" isMultiline="no" isPerlSlashGOption="no" isColorizerTrigger="no" isFilterTrigger="no" isSoundTrigger="no" isColorTrigger="no" isColorTriggerFg="no" isColorTriggerBg="no">
 							<name>StupidityValid</name>
-							<script>if not commandCheck(StupeCheck) and not svo.affl.stupidity then 
-  wrapLine(0,0) echo("\n") 
-  svo.echof("Detected stupidity from stupidcheck") 
+							<script>if not commandCheck(StupeCheck) and not svo.affl.stupidity then
+  wrapLine(0,0) echo("\n")
+  svo.echof("Detected stupidity from stupidcheck")
   svo.valid.simplestupidity()
   svo.showprompt()
   svo.send_in_the_gnomes()
@@ -52732,7 +52732,11 @@ fg("a_darkgrey") echo(" " .. percent .. "% mana") resetFormat()</script>
 						<name>Bar Health on Assess</name>
 						<script>selectString("You glance over ", 1) replace("") deselect()
 
-if selectString(" and see that his health", 1) ~= -1 or selectString(" and see that her health",1 ) ~= -1 then
+if
+  selectString(" and see that his health", 1) ~= -1
+  or selectString(" and see that her health",1 ) ~= -1
+  or selectString(" and see that faes health",1 ) ~= -1
+then
   replace("") deselect()
 end
 
@@ -54036,9 +54040,9 @@ end</script>
 					<name>Latency</name>
 					<script>local count = 0
 for k, v in pairs(svo.affl) do
-  if k == "sandfever" or k == "mycalium" or k == "pyramides" or 
+  if k == "sandfever" or k == "mycalium" or k == "pyramides" or
   k == "flushings" or k == "rebbies" then
-    count = count + 1    
+    count = count + 1
   end
 end
 if count &gt;= 3 then
