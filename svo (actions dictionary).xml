@@ -1775,8 +1775,7 @@ if not next(svo.dict) then
     pyre = {
       herb = {
         isadvisable = function()
-          return (affs.pyre and (not (svo.haveskillset('discipline') or svo.haveskillset('malignity') or svo.haveskillset('valour') or svo.haveskillset('domi
-nion')) or not svo.dict.rage.misc.isadvisable())) or false
+          return (affs.pyre and (not (svo.haveskillset('discipline') or svo.haveskillset('malignity') or svo.haveskillset('valour') or svo.haveskillset('dominion')) or not svo.dict.rage.misc.isadvisable())) or false
         end,
 
         oncompleted = function()
