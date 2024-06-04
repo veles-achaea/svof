@@ -55129,7 +55129,7 @@ svo.conf.ridingsteed = matches[3]
 send(command, false)</script>
 				<command></command>
 				<packageName></packageName>
-				<regex>^(vault|mount|board) (\w+)$</regex>
+				<regex>^(vault|mount|board) ((\/|\w)+)$</regex>
 			</Alias>
 			<Alias isActive="yes" isFolder="no">
 				<name>(b *) Block a dir</name>
