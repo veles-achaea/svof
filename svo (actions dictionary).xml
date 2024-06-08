@@ -13936,7 +13936,7 @@ if not next(svo.dict) then
         uncurable = true,
   
         isadvisable = function()
-          if not (conf.rage and bals.rage and (affs.inlove or affs.justice or affs.generosity or affs.pacifism or affs.peace) and not defc.dragonform and svo.can_usemana()) then return false end
+          if not (conf.rage and bals.rage and (affs.inlove or affs.justice or affs.generosity or affs.pacifism or affs.peace or affs.pyre) and not defc.dragonform and svo.can_usemana()) then return false end
   
           for name, func in pairs(svo.rage) do
             if not me.disabledragefunc[name] then
